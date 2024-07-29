@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Diablazo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#mapa">MAPA</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">RESERVAS</a></li>
+                    <li><a href="#footer" onclick="seleccionar()">REDES</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <section class="form">
+        <form action= "">
+            <input type="text" id="nombre">
+            <input type="text" id="apellido">
+            <input type="text" id="telefono">
+            <input type="submit" onclick="EnvLocal()">
+            <input type="submit" onclick="Recuperar()">
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

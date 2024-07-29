@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+.contenedor-header{
+    background: rgba(196, 7, 23, 0.795);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    
+}
+.contenedor-header .logo a{
+    
+    font-family: 'Rock Salt';
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    opacity: 5;
+
+}
+.contenedor-header .logo a:hover{
+    
+    color: #CCFF00;
+    transition: all .8s;
+    
+
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    
+}
+.contenedor-header header nav ul li a{
+    
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    
+}
+.contenedor-header header nav ul li a:hover{
+
+    color: #CCFF00;
+    border-bottom: 5px solid #fff;
+}
+
+.nav-responsive{
+    background-color: #CCFF00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.contenedor-header .logo2 a{
+    
+    font-family: 'Rock Salt';
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    opacity: 5;
+    display: none;
+    float: left;
+    position: initial;
+
+}
+.contenedor-header .logo2 a:hover{
+    color: #CCFF00;
+    transition: all .8s;
+}
+
+
+@media screen and (max-width:420px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+body{
+    margin-top: 100px;
+    text-align: center;
+    gap: 10px;
+}
+body img{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+body button{
+    margin-top: 10px;
+    width: 100px;
+    height: 20px;
+}
